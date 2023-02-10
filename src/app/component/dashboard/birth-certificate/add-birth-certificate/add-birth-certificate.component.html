@@ -1,0 +1,60 @@
+<h2 mat-dialog-title >{{title}}</h2>
+<mat-divider></mat-divider>
+
+<mat-dialog-content [formGroup] ="form ">
+    <mat-grid-list cols="2">
+        <mat-grid-tile>
+
+            <div class="example-container">
+                
+              <mat-form-field >
+                <mat-label>Enter full Name</mat-label>
+                <input matInput placeholder="Ali khan"
+                 formControlName="name"
+                 required>
+                <mat-error *ngIf="form.get('name')?.invalid || form.get('name')?.dirty || form.get('name')?.touched ">Enter full Name</mat-error>
+              </mat-form-field>
+
+                <mat-form-field >
+                    <mat-label>Father Name</mat-label>
+                    <input matInput  
+                     formControlName="fathername"
+                     required>
+                    <mat-error *ngIf="form.get('fathername')?.invalid || form.get('fathername')?.dirty || form.get('fathername')?.touched ">Enter father Name</mat-error>
+                  </mat-form-field>
+
+               
+
+              </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+            <div>
+                <mat-label>Gender</mat-label>
+                <mat-radio-group aria-label="Select an gender" color="primary" formControlName="gender"><br>
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                    <mat-radio-button value="other">Other</mat-radio-button>
+                  
+                  </mat-radio-group>
+                  
+               
+
+                  <mat-form-field >
+                    <mat-label>Birthdate</mat-label>
+                    <input matInput [matDatepicker]="picker"  formControlName="birthdate">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="form.get('birthdate')?.invalid || form.get('birthdate')?.dirty || form.get('birthdate')?.touched ">Select birthdate</mat-error>
+                  </mat-form-field>
+            </div>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close (click)="cancelRegisteration()">Cancel</button>
+    <button mat-raised-button color="primary" mat-dialog-close  (click)="registerDoctor()">{{buttonName}}</button>
+  </div>

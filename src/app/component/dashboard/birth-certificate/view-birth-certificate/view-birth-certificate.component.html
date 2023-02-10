@@ -1,0 +1,27 @@
+<h2 style="font-weight: 700;" class="m-3" color="primary">Birth Certificate Details</h2>
+<mat-card class="m-3">
+  <mat-card-title>
+    {{birthcertificateObj?.name}}
+  </mat-card-title>
+ 
+  <mat-divider></mat-divider>
+
+    <div class="row pt-3">
+      <div class="col-md-6">
+        <mat-card-content>
+          
+        <span> Father Name : </span> {{birthcertificateObj?.fathername}} <br>
+        <span> Gender : </span> {{birthcertificateObj?.gender}} <br>
+
+        </mat-card-content>
+      </div>
+      <div class="col-md-6">
+       <mat-card-content>
+         
+        <span> Date of birth : </span> {{birthcertificateObj?.birthdate}}
+       </mat-card-content>
+      </div>
+    </div>
+</mat-card>
+
+ 
