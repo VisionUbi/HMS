@@ -1,4 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
-
+/* 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+
+/* 1 General */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+
+:root {
+  /* Background Color */
+  --primary-color: #004caa;
+  --secondary-color: #fc5185;
+  --bg-light-blue: #3672bc;
+  --bg-dark: #666;
+  --bg-white: #fff;
+
+  /* Text Style */
+  --primary-font: 'Roboto Slab', serif;
+  --secondary-font: 'Josefin Sans', sans-serif;
+  --primary-text: #004caa;
+  --secondary-text: #fc5185;
+  --text-white: #fff;
+  --text-black: #222;
+  --text-gray: #666;
+  --text-light: #ddd;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--bg-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}

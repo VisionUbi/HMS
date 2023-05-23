@@ -29,6 +29,7 @@ import { ViewBirthCertificateComponent } from './component/dashboard/birth-certi
 import { EditBirthCertificateComponent } from './component/dashboard/birth-certificate/edit-birth-certificate/edit-birth-certificate.component';
 import { DeleteBirthCertificateComponent } from './component/dashboard/birth-certificate/delete-birth-certificate/delete-birth-certificate.component';
 import { WebsiteComponent } from './website/website.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { WebsiteComponent } from './website/website.component';
     MaterialModule,
     LayoutModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   
   ],
   providers: [],

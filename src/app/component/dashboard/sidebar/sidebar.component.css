@@ -31,3 +31,12 @@
   color: aliceblue !important;
   border-radius: 8px;
 }
+
+span {
+  position: absolute;
+  Left: x;
+  Top: x;
+  
+  Right: auto;
+  Bottom: auto;
+}

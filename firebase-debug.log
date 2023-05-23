@@ -1,0 +1,25 @@
+[debug] [2023-05-23T16:04:42.145Z] ----------------------------------------------------------------------
+[debug] [2023-05-23T16:04:42.149Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\UBAID\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-05-23T16:04:42.150Z] CLI Version:   12.0.0
+[debug] [2023-05-23T16:04:42.150Z] Platform:      win32
+[debug] [2023-05-23T16:04:42.151Z] Node Version:  v18.16.0
+[debug] [2023-05-23T16:04:42.152Z] Time:          Tue May 23 2023 21:04:42 GMT+0500 (Pakistan Standard Time)
+[debug] [2023-05-23T16:04:42.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-23T16:04:42.244Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-23T16:04:42.244Z] > authorizing via signed-in user (ubaidkhank1998@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\UBAID\Documents\A KPIT  internship\Angular\project\old\HospitalManagement
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

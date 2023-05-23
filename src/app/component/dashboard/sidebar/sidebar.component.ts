@@ -11,6 +11,16 @@ import { AuthService } from 'src/app/shared/service/auth.service';
 })
 export class SidebarComponent {
 
+  userLoggedIn: boolean = false;
+// openLinkInNewTab() {
+//   window.open('website', '_blank');
+// }
+openLinkInNewTab() {
+  const externalWebsiteUrl = 'website'; // Replace with the actual URL of the external website
+  window.open(externalWebsiteUrl, '_blank');
+}
+
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),

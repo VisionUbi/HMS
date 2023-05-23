@@ -13,6 +13,11 @@ import { WebsiteComponent } from './website/website.component';
 
 const routes: Routes = [
   {path:'website' , component: WebsiteComponent},
+
+
+
+
+
   {path : 'dashboard' , children:[
     {path:'' , redirectTo: 'patient', pathMatch:'full'},
     {path:'patient' , component: PatientComponent},
@@ -22,10 +27,11 @@ const routes: Routes = [
     {path:'doctor/:id' , component: ViewDoctorComponent},
     {path:'birthcertificate/:id' , component: ViewBirthCertificateComponent},
 
-    
+
     {path:'patient/:id' , component: ViewPatientComponent}
   ],canActivate: [AuthguardGuard] },
   {path : 'login', component : LoginComponent},
+
   {path : '', redirectTo : 'login' , pathMatch : 'full'}
 ];
 
